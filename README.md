@@ -52,8 +52,8 @@
 
 #### 5. 使用方式
 - 下载源码：
-> git clone git@github.com:
-> 或者到 https://github.com/
+> git clone git@github.com:Gjh9508/asyncbili.git
+> 或者到 https://github.com/Gjh9508/asyncbili 下载源码
 - 安装依赖：
 > pip3 install -r requirements
 - 启动程序：
