@@ -1,0 +1,26 @@
+# 创建git仓库
+mkdir asyncbili
+cd asyncbili
+git init
+ls -ah #查看.git 文件
+上传文件
+git add xxx.py #将文件加到git仓库中的暂存区
+git commit -m "说明" #提交修改到当前分支
+git remote add origin git@github.com:Gjh9508/asyncbili.git #连接远程仓库
+git push -u origin master #origin 远程主机名，master 本地分支名  这里还没搞明白
+
+git删除文件
+git rm xx.py
+git commit -m ""
+ git checkout -- test.txt #恢复版本库中的文件
+
+git log  #查看提交的版本记录
+git log --pretty=oneline
+
+##分支
+git branch
+git branch <name> #创建分支
+git checkout <name> #切换
+git checkout -b <name> # 创建同时切换
+git merge <name>  #合并分支到当前分支
+git branch -d <name> #删除
