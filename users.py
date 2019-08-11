@@ -53,10 +53,10 @@ async def parse_html(r):
 def connect_sql():
     global conn,cursor
     conn = pymysql.connect(
-        host='39.104.107.179',
+        host='',
         port=3306,
         user='root',
-        password='051414',
+        password='',
         database='bilibili',
         charset='utf8')
     # 获取一个光标
@@ -93,7 +93,7 @@ https://github.com/zhang0peter/bilibili-video-information-spider/blob/master/new
 if __name__ == '__main__':
     connect_sql()
     t = time.time()
-    for n in range(245,300):
+    for n in range(0,300):
         urls = ['https://api.bilibili.com/x/space/acc/info?mid='+str(k) for k in range(n*10000,(n+1)*10000)]
         print(urls[1])
         semaphore = asyncio.Semaphore(200)
